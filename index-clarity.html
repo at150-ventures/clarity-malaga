@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Clarity for Founders - Brain Scans in Málaga</title>
+    <meta name="description" content="Unlock mental clarity and peak founder performance with professional neurofeedback brain scans in Málaga. 60-minute sessions for €399.">
+    
+    <!-- Fonts: Playfair Display for elegance, DM Sans for readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ============================================
+           EASY EDITING SECTION - CHANGE COLORS HERE
+           ============================================ */
+        :root {
+            /* Main colors - change these to rebrand */
+            --primary-color: #2D5F7E;        /* Deep blue - main brand color */
+            --accent-color: #E8956C;         /* Warm coral - call-to-action buttons */
+            --text-dark: #1A1A1A;            /* Almost black for text */
+            --text-medium: #4A4A4A;          /* Medium gray for secondary text */
+            --background-light: #F8F9FA;     /* Light gray background */
+            --white: #FFFFFF;
+            
+            /* Spacing - adjust for tighter/looser feel */
+            --section-padding: 80px;
+            --mobile-padding: 40px;
+            
+            /* Fonts */
+            --heading-font: 'Playfair Display', serif;
+            --body-font: 'DM Sans', sans-serif;
+        }
+        
+        /* ============================================
+           BASE STYLES
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--body-font);
+            color: var(--text-dark);
+            line-height: 1.7;
+            background: var(--white);
+            overflow-x: hidden;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* ============================================
+           TYPOGRAPHY
+           ============================================ */
+        h1, h2, h3, h4 {
+            font-family: var(--heading-font);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+        }
+        
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+        }
+        
+        p {
+            font-size: clamp(1rem, 2vw, 1.125rem);
+            color: var(--text-medium);
+            margin-bottom: 1rem;
+        }
+        
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1a3d52 100%);
+            color: var(--white);
+            overflow: hidden;
+            padding: var(--section-padding) 20px;
+        }
+        
+        /* Animated wave background */
+        .hero::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(232, 149, 108, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+            animation: waves 20s ease-in-out infinite;
+        }
+        
+        @keyframes waves {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-20px) scale(1.05); }
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.25rem, 3vw, 1.5rem);
+            font-weight: 400;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-style: italic;
+        }
+        
+        .hero-description {
+            font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            color: rgba(255, 255, 255, 0.95);
+        }
+        
+        /* ============================================
+           BUTTONS - EASY TO FIND AND EDIT
+           ============================================ */
+        .cta-button {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 18px 40px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(232, 149, 108, 0.3);
+            font-family: var(--body-font);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(232, 149, 108, 0.4);
+            background: #d17d52;
+        }
+        
+        .secondary-button {
+            display: inline-block;
+            background: transparent;
+            color: var(--primary-color);
+            padding: 18px 40px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid var(--primary-color);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-family: var(--body-font);
+        }
+        
+        .secondary-button:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        
+        /* ============================================
+           SECTION CONTAINER
+           ============================================ */
+        .section {
+            padding: var(--section-padding) 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-alt {
+            background: var(--background-light);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+        
+        /* ============================================
+           SESSION DETAILS GRID
+           ============================================ */
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .detail-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .detail-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+        
+        .detail-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .detail-number {
+            font-family: var(--heading-font);
+            font-size: 3rem;
+            color: var(--accent-color);
+            opacity: 0.3;
+            margin-bottom: 0.5rem;
+        }
+        
+        .detail-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        /* ============================================
+           CONTENT SECTIONS
+           ============================================ */
+        .content-section {
+            margin: 4rem 0;
+        }
+        
+        .content-block {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            background: linear-gradient(135deg, var(--background-light) 0%, #e0e5ea 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 3rem auto;
+            color: var(--text-medium);
+            font-style: italic;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* ============================================
+           BENEFITS GRID
+           ============================================ */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .benefit-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(45, 95, 126, 0.15);
+        }
+        
+        .benefit-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        /* ============================================
+           PROCESS STEPS
+           ============================================ */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .process-step::after {
+            content: '→';
+            position: absolute;
+            right: -1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: var(--accent-color);
+            opacity: 0.3;
+        }
+        
+        .process-step:last-child::after {
+            display: none;
+        }
+        
+        .step-title {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* ============================================
+           TESTIMONIALS
+           ============================================ */
+        .testimonial {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin: 2rem 0;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .testimonial-text {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .testimonial-location {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+        }
+        
+        /* ============================================
+           FAQ SECTION
+           ============================================ */
+        .faq-grid {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+        }
+        
+        .faq-question {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* ============================================
+           ABOUT / PROFILE SECTION
+           ============================================ */
+        .profile-section {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            max-width: 900px;
+            margin: 3rem auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: var(--background-light);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-medium);
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .profile-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .profile-title {
+            font-style: italic;
+            color: var(--text-medium);
+            margin-bottom: 1rem;
+        }
+        
+        .profile-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .profile-link:hover {
+            color: var(--accent-color);
+        }
+        
+        /* ============================================
+           FINAL CTA SECTION
+           ============================================ */
+        .final-cta {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1a3d52 100%);
+            color: var(--white);
+            text-align: center;
+            padding: var(--section-padding) 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(232, 149, 108, 0.1) 0%, transparent 70%);
+        }
+        
+        .final-cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .final-cta h2 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+        
+        .final-cta p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* ============================================
+           DISCLAIMER
+           ============================================ */
+        .disclaimer {
+            background: var(--background-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem auto;
+            max-width: 900px;
+            font-size: 0.9rem;
+            color: var(--text-medium);
+            border-left: 3px solid var(--accent-color);
+        }
+        
+        .disclaimer h4 {
+            color: var(--primary-color);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background: var(--text-dark);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 3rem 20px;
+            text-align: center;
+        }
+        
+        footer p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 768px) {
+            :root {
+                --section-padding: var(--mobile-padding);
+            }
+            
+            .hero {
+                min-height: 70vh;
+            }
+            
+            .details-grid,
+            .benefits-grid,
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .process-step::after {
+                display: none;
+            }
+        }
+        
+        /* ============================================
+           UTILITY CLASSES
+           ============================================ */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mt-2 {
+            margin-top: 2rem;
+        }
+        
+        .mb-2 {
+            margin-bottom: 2rem;
+        }
+        
+        .bold {
+            font-weight: 600;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================
+         HERO SECTION
+         EASY TO EDIT: Change headline, subtitle, description, and button link
+         ============================================ -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mind Clarity for Founders</h1>
+            <p class="hero-subtitle">Brain scans in Málaga for Focus and Performance</p>
+            <p class="hero-description">Unlock mental clarity, burnout risk insight, and peak founder performance in just a 60-minute session.</p>
+            
+            <!-- EDIT THIS: Change the booking link URL here -->
+            <a href="https://tidycal.com/at150/mind-clarity-malaga" class="cta-button">Book Your Scan Slot</a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SESSION DETAILS
+         EASY TO EDIT: Change location, duration, price, availability details
+         ============================================ -->
+    <section class="section">
+        <h2 class="section-title">Session Details</h2>
+        
+        <div class="details-grid">
+            <div class="detail-card">
+                <div class="detail-number">1</div>
+                <h3>Location</h3>
+                <p class="bold">Málaga, Spain</p>
+                <p>Venue confirmed after booking. Central location with easy access, parking availability and comfortable seating. Nothing medical.</p>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-number">2</div>
+                <h3>Duration</h3>
+                <p class="bold">60 minutes</p>
+                <p>Includes setup, the actual brainscan, immediate results review, and interpretation session. Efficient enough to fit into a founder's schedule without wasting time.</p>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-number">3</div>
+                <h3>Your Investment</h3>
+                <!-- EDIT THIS: Change the price here -->
+                <p class="bold">€399 per session</p>
+                <p>One session already gives you deep insight. If you want to track progress, you can return later and compare scans to see whether your changes are moving you in the right direction.</p>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-number">4</div>
+                <h3>Availability</h3>
+                <p class="bold">Limited slots in Málaga</p>
+                <p>First come, first served basis. Early adopters get priority booking and special consideration for follow-up sessions at reduced rates.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROBLEM SECTION
+         ============================================ -->
+    <section class="section section-alt">
+        <div class="content-block">
+            <h2>Being a Founder can be Mentally Brutal</h2>
+            <p>Stress, pressure, uncertainty, and nonstop decision-making overload your nervous system daily. You're constantly operating in fight-or-flight mode, sacrificing sleep, relationships, and health to build something meaningful.</p>
+            <p>Our Mind Clarity Brainscan reveals how your mind is truly operating beneath the surface - using a professional neurofeedback tool to measure your brainwave patterns in real time. This isn't guesswork or wellness fluff. It's objective data about your most critical asset: your brain.</p>
+            <p>In just 45 minutes, you'll walk away with real data and actionable insight you can't get anywhere else. No other service in Málaga offers founders this level of mental performance analysis specifically designed for the startup grind.</p>
+        </div>
+        
+        <!-- EDIT THIS: Replace with your actual image -->
+        <div class="image-placeholder">
+            Replace with brain scan image<br>(download from Gamma and upload here)
+        </div>
+    </section>
+
+    <!-- ============================================
+         WHAT YOU RECEIVE
+         ============================================ -->
+    <section class="section">
+        <h2 class="section-title">What You Receive in Your Session</h2>
+        
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>Neurofeedback Scan</h3>
+                <p>Professional-grade brainwave measurement technology used by neuroscientists and performance coaches worldwide.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Personalised Report Card</h3>
+                <p>A clear report with clear graphs and insights you can reference anytime.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Founder-Specific Interpretation</h3>
+                <p>Analysis focused on clarity, focus, stress response, and burnout risk - tailored to startup demands, not generic wellness advice.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Simple Takeaways</h3>
+                <p>Actionable recommendations to improve mental performance without adding complexity to your already packed schedule.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WHO THIS IS FOR
+         ============================================ -->
+    <section class="section section-alt">
+        <h2 class="section-title">Who This Is For</h2>
+        <div class="content-block">
+            <p>This experience is designed specifically for early-stage and growth-stage startup founders and solo founders in Málaga who recognize that mental performance directly impacts business outcomes.</p>
+        </div>
+        
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>Gain Clarity</h3>
+                <p>Cut through the mental fog and make decisions with confidence instead of second-guessing yourself constantly.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Prevent Burnout</h3>
+                <p>Identify warning signs before you crash and lose months of productivity or make decisions you'll regret.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Improve Focus</h3>
+                <p>Understand what's fragmenting your attention and learn how to achieve deeper, more productive work states.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Understand Mental Performance</h3>
+                <p>See objective data about how your brain operates under pressure, not just subjective feelings about stress levels.</p>
+            </div>
+            
+            <div class="benefit-card">
+                <h3>Validate Nervous System Fitness</h3>
+                <p>Confirm whether your mental infrastructure can handle the relentless demands of building a startup for the long haul.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WHY YOUR BRAIN MATTERS
+         ============================================ -->
+    <section class="section">
+        <h2 class="section-title">Why Your Brain Matters More Than Your Pitch Deck</h2>
+        
+        <div class="content-block">
+            <h3>Your Brain Is Your Primary Startup Asset</h3>
+            <p>Every decision, every pivot, every difficult conversation, every late night - it all runs through your brain. Yet founders obsessively measure runway, conversion rates, and customer acquisition costs while completely ignoring the performance of their most critical hardware.</p>
+            <p>You wouldn't run a data center without monitoring server health. Why run a startup without monitoring brain health?</p>
+        </div>
+        
+        <div class="content-block mt-2">
+            <h3>What This Scan Provides</h3>
+            <ul>
+                <li>Objective mental performance data — not feelings, actual measurements</li>
+                <li>Nervous system awareness — understand your stress response patterns</li>
+                <li>Early warning signals — catch burnout before it derails everything</li>
+                <li>Patterns blocking execution — identify what's actually preventing flow states</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================
+         THE SCIENCE
+         ============================================ -->
+    <section class="section section-alt">
+        <h2 class="section-title">The Science Behind the Scan</h2>
+        <div class="content-block">
+            <p>This neurofeedback system measures electrical activity in your brain using EEG (electroencephalography) technology. This non-invasive approach has been used in research and clinical settings for decades, providing reliable insights into cognitive function.</p>
+        </div>
+        
+        <div class="process-grid">
+            <div class="process-step">
+                <p class="step-title">Sensors Detect Brainwaves</p>
+                <p>Electrodes placed on your scalp measure electrical signals from different brain regions.</p>
+            </div>
+            
+            <div class="process-step">
+                <p class="step-title">Data Is Analyzed</p>
+                <p>Software processes frequencies including beta (focus), alpha (calm alertness), theta (creativity), and delta (deep rest).</p>
+            </div>
+            
+            <div class="process-step">
+                <p class="step-title">Patterns Are Identified</p>
+                <p>Your unique brainwave signature reveals how your nervous system responds to stress and demand.</p>
+            </div>
+            
+            <div class="process-step">
+                <p class="step-title">You Get Actionable Insight</p>
+                <p>Specific recommendations based on your patterns, not generic meditation advice.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIALS
+         EASY TO EDIT: Change quotes, names, locations
+         ============================================ -->
+    <section class="section">
+        <h2 class="section-title">What Founders Are Saying</h2>
+        
+        <div class="testimonial">
+            <p class="testimonial-text">"I didn't realise how much I was stressing myself into a corner. This brainscan revealed how drained I really was. That single insight helped me refocus, repair my sleep, clear my mind, and finally make progress again."</p>
+            <p class="testimonial-author">— Leo, MedTech Founder</p>
+            <p class="testimonial-location">Tilburg, The Netherlands</p>
+        </div>
+        
+        <div class="testimonial">
+            <p class="testimonial-text">"This session revealed that I am mentally strong and capable of leading at a higher level than I realised. That boost in confidence alone changed how I make decisions and communicate with my team."</p>
+            <p class="testimonial-author">— JuanMo, SaaS co-founder</p>
+            <p class="testimonial-location">Lisbon, Portugal</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FAQ SECTION
+         EASY TO EDIT: Add/remove questions and answers
+         ============================================ -->
+    <section class="section section-alt">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        
+        <div class="faq-grid">
+            <div class="faq-item">
+                <p class="faq-question">Is this medical?</p>
+                <p>No. This is a performance-oriented neurofeedback experience designed for personal and professional development, not a medical diagnosis or treatment. Think of it as performance analytics for your brain, similar to how athletes use VO2 max testing or lactate threshold analysis.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">How private is my data?</p>
+                <p>Completely confidential. Nothing is shared without your explicit permission. Your scan results belong to you exclusively. No third-party access, no data sales, no marketing lists. This is between you and your results.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Does it hurt?</p>
+                <p>It's entirely non-invasive, silent, and actually quite relaxing. You sit comfortably while wearing a headset with sensors. No needles, no shocks, no discomfort. Most founders report feeling unusually calm during the process.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Do I need preparation?</p>
+                <p>Just come rested if possible. Coffee is optional — we scan you in your natural state, whatever that is. Avoid alcohol the night before. Otherwise, show up as you normally are. Authentic data beats optimized data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT / PROFILE SECTION
+         EASY TO EDIT: Change name, title, bio, LinkedIn link
+         ============================================ -->
+    <section class="section">
+        <h2 class="section-title">Meet Your Founder Clarity Advisor</h2>
+        
+        <div class="profile-section">
+            <!-- EDIT THIS: Replace with actual profile photo -->
+            <div class="profile-image">
+                Replace with<br>Robert-Jan's photo
+            </div>
+            
+            <div class="profile-content">
+                <h3>Robert-Jan Brouwer</h3>
+                <p class="profile-title">Founder Clarity Advisor | Based in: Málaga, Spain</p>
+                <p>I've started and scaled companies for three decades, and I know how brutal the founder journey can be. These Founder Clarity scans are my way of giving founders something I wish I had earlier: objective data about stress, clarity, and mental readiness to lead.</p>
+                
+                <!-- EDIT THIS: Change LinkedIn URL -->
+                <a href="https://linkedin.com/in/rjbrouwer" class="profile-link" target="_blank">Check my LinkedIn profile →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FINAL CTA
+         ============================================ -->
+    <section class="final-cta">
+        <div class="final-cta-content">
+            <h2>Ready to See What's Really Happening in Your Founder Brain?</h2>
+            
+            <!-- EDIT THIS: Replace with actual image -->
+            <div class="image-placeholder" style="background: rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.6); margin: 2rem auto;">
+                Replace with brain/clarity image
+            </div>
+            
+            <h3 style="color: white; margin-top: 2rem;">Limited Slots Available</h3>
+            <p>This is your opportunity to gain unprecedented insight into your most valuable startup asset. First-come, first-served basis for Málaga founders ready to stop guessing and start measuring.</p>
+            <p>Stop operating blind. Book your Founder Clarity Scan today and discover exactly what's happening beneath the surface when you're making decisions, managing stress, and pushing through the endless demands of building something meaningful.</p>
+            
+            <!-- EDIT THIS: Change booking link URL -->
+            <a href="https://tidycal.com/at150/mind-clarity-malaga" class="cta-button" style="margin-top: 1rem;">Book Your Scan Slot Now</a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         DISCLAIMER
+         ============================================ -->
+    <section class="section">
+        <div class="disclaimer">
+            <h4>Important Disclaimer</h4>
+            <p>This session is not intended for medical diagnosis or treatment of any condition. The Founder Clarity Scan provides insights for personal and professional development purposes only. If you have concerns about mental health, neurological conditions, or medical issues, please consult a licensed healthcare provider. Results are educational and performance-focused, not clinical recommendations.</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <p>Your brain is running your startup. Make sure it's running well.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">© 2026 Mind Clarity for Founders | Málaga, Spain</p>
+    </footer>
+
+</body>
+</html>
